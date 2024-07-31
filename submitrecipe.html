@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Recipe</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<header>
+    <h1>Submit a Recipe</h1>
+    <li><a href="chocolatechip.html">Back to Home</a> </li>
+</header>
+<body>
+    <h1>Recipe Submission Form</h1>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>What Should We Know About Your Recipe?</legend>
+        <label for="recipeName">Recipe Name:</label>
+        <input type="text" id="recipeName" name="recipeName" placeholder="Name of Recipe" required="yes" aria-label="Enter your recipe's name">
+        <br>
+        <label for="recipeCreator">Recipe Author:</label>
+        <input type="text" id="Author" placeholder="Author's Name Here!" required="yes">
+        <br>
+        <label for="recipeDescription">Description:</label>
+        <input type="checkbox" id="food" name="food" value="breakfast"><b>Breakfast</b>
+        <input type="checkbox" id="food" name="food" value="lunch"><b>Lunch</b>
+        <input type="checkbox" id="food" name="food" value="dinner"><b>Dinner</b>
+        <input type="checkbox" id="food" name="food" value="dessert"><b>Dessert</b>
+        <input type="checkbox" id="food" name="food" value="snack"><b>Snack</b>
+    </fieldset><br>
+
+    <fieldset>
+        <label for="recipeIngredients">Ingredients List:</label>
+        <p>Enter each ingredient on a new, numbered line, with the appropriate amounts required.</p>
+        <textarea id="recipeIngredients" name="recipeIngredients" required="yes"> </textarea>
+        <br>
+        <label for="recipeSteps">Steps:</label>
+        <p>Enter each step on a new, numbered line, along with any requisite instructions.</p>
+        <textarea id="recipeSteps" name="recipeSteps" required></textarea>
+    </fieldset><br>
+        <input type="submit" value="Submit Recipe">
+</body>
+<footer>
+    <p>&copy; 2024 created by Harrison Brockhoff<br>
+        All rights reserved.<br>
+        Copyright violators will be hunted for sport and incorporated into a future recipe.
+    </p>        
+    
+</html>
